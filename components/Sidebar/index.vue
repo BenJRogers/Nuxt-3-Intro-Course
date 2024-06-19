@@ -3,5 +3,12 @@ const loading = ref(false);
 </script>
 
 <template>
-    <p>This is the sidebar</p>
+    <div class="relative">
+        <div class="flex lg:hidden">
+            <SidebarMenu />
+        </div>
+        <div class="hidden lg:flex">
+            <SidebarMenu />
+        </div>
+    </div>
 </template>
